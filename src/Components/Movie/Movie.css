@@ -1,0 +1,49 @@
+.cardd {
+  box-shadow: 10px 10px 5px #eea2bb;
+  width: 555px !important;
+  height: 270px !important;
+  display: inline-flex;
+  justify-content: space-between;
+  border-radius: 25px;
+  background-color: rgb(218, 234, 248) ;
+  margin: 15px 30px!important;
+}
+.cardd-p1 {
+  width: 35%;
+  
+}
+.cardd-p2 {
+  width: 65%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.cardd-p1 img {
+  margin-top: 10px;
+  margin-left: 2px;
+  height: 250px;
+  width: 168px ;
+  border-radius: 10%;
+}
+
+.cardd-p2 .desc {
+  height: 55% !important;
+  font-family: "Great Vibes", cursive !important;
+  font-size: 15px !important;
+  text-align: center !important;
+}
+.cardd-p2 .rating {
+  margin-bottom: 6px;
+}
+.cardd-p2 h4 {
+  height: 8%;
+  color: #dd376f;
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-top: 20px !important;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgb(170, 241, 243);
+}
