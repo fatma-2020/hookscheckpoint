@@ -11,7 +11,12 @@ const MovieRating = ({ rate }) => {
         "& > legend": { mt: 2 },
       }}
     >
-      <Rating name="read-only" value={value} readOnly />
+      <Rating
+        name="read-only"
+        value={value}
+        readOnly
+        style={{ marginLeft: 14 }}
+      />
     </Box>
   );
 };

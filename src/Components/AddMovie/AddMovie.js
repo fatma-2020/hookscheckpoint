@@ -1,4 +1,3 @@
-import { Dropdown } from "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
@@ -10,18 +9,19 @@ const AddMovie = ({ addFilm }) => {
   const [title, setTitle] = React.useState("");
   const [rating, setRating] = React.useState(0);
   const [poster, setPoster] = React.useState("");
+  const [trailer, setTrailer] = React.useState("");
   const addMovie = () => {
     if (
       title.trim() === "" ||
       poster.trim() === "" ||
       descrition.trim() === "" ||
+      trailer.trim() === "" ||
       rating === 0
     ) {
       window.alert("رجاء  تاكد من ادخال جميع المعلومات !");
-      console.log(title, poster, descrition, rating);
     } else {
       console.log(rating);
-      addFilm(title, poster, descrition, rating);
+      addFilm(title, poster, descrition, rating, trailer);
       handleClose();
     }
   };
@@ -58,7 +58,7 @@ const AddMovie = ({ addFilm }) => {
               <Form.Label>قصة الفيلم</Form.Label>
               <Form.Control
                 as="textarea"
-                rows={3}
+                rows={2}
                 placeholder="... يدور الفيلم حول"
                 onChange={(e) => setDescrition(e.target.value)}
               />
@@ -72,7 +72,14 @@ const AddMovie = ({ addFilm }) => {
                 onChange={(e) => setPoster(e.target.value)}
               />
             </Form.Group>
-
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>المقطع الترويجي للفيلم</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="رابط للمقطع الدعائي"
+                onChange={(e) => setTrailer(e.target.value)}
+              />
+            </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>تصنيف الفيلم </Form.Label>
               <Form.Control

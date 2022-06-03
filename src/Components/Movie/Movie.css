@@ -1,33 +1,33 @@
 .cardd {
-  box-shadow: 10px 10px 5px #eea2bb;
+  box-shadow: 10px 10px 5px #fcb9d0;
   width: 555px !important;
   height: 270px !important;
   display: inline-flex;
   justify-content: space-between;
   border-radius: 25px;
-  background-color: rgb(218, 234, 248) ;
-  margin: 15px 30px!important;
+  background-color: rgb(188, 217, 243);
+  margin: 15px 30px !important;
 }
 .cardd-p1 {
   width: 35%;
-  
+  display: block;
 }
 .cardd-p2 {
-  width: 65%;
+  width: 85%;
   padding-left: 10px;
   padding-right: 10px;
-  
 }
 .cardd-p1 img {
-  margin-top: 10px;
-  margin-left: 2px;
-  height: 250px;
-  width: 168px ;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  height: 210px;
+  width: 140px;
   border-radius: 10%;
 }
 
 .cardd-p2 .desc {
-  height: 55% !important;
+  height: 50% !important;
   font-family: "Great Vibes", cursive !important;
   font-size: 15px !important;
   text-align: center !important;
@@ -47,3 +47,47 @@
   text-align: center;
   text-shadow: 0 1px 1px rgb(170, 241, 243);
 }
+.trailer-btn {
+  background-color: #eb0808;
+  border: solid transparent;
+  border-radius: 10px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #f8efef;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  outline: none;
+  overflow: visible;
+  padding: 9px 5px 9px 5px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 140px;
+}
+.cancel-button:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
